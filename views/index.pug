@@ -1,0 +1,26 @@
+doctype html
+html
+    head
+        title Siksha School
+        block scripts
+        block style
+    body
+        nav.h-nav.background.navbar
+            ul.nav-list.visibility-class
+                li #[a(href="/") Home] 
+                li #[a(href="/") About]
+                li #[a(href="/contact") Contact Us]
+                li #[a(href="/") Class] 
+                li #[a(href="/") Services]
+
+            div.burger 
+                div.line
+                div.line
+                div.line    
+
+        block content
+
+        footer#footer
+            | Copyright © https://www.iguide.com | All rights reserved
+
+        script(src="../static/resp.js")    

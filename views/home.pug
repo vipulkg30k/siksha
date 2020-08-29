@@ -1,0 +1,44 @@
+extends index.pug
+
+block scripts
+    script(src="/static/index.js")
+
+block style
+    style
+        include ../static/css/index.css
+        include ../static/css/resp.css
+
+block content
+    section#introsection
+        div.slides
+            figure
+                img(src="../static/img/1.jpg")
+                img(src="../static/img/2.jpg")
+                img(src="../static/img/3.jpg")
+                img(src="../static/img/4.jpg")
+                img(src="../static/img/1.jpg")
+
+    section#box
+        div#firstBox
+            p.text-big
+                | Siksha Sr. Sec. School, Gopalpura Road, Jaipur             
+            p.text-small
+                | Every moment in life is a fresh beginning. That brings with it the boundless joy of new possibilities. And the pleasure is compounded when you know, you are about to realize a lofty goal. Since the time we began in 2020, we have constantly strived for excellence. Like for the many young minds we have shaped, it's the winning spirit that has been of essence. Even quintessential, if you look at it from our perspective. And winning is possible only when one has the power to perceive the need of the hour. Sarvodaya has always been innovating to create excellence. I am sure the varied services that this web-site offers our existing and aspiring students will be a great boon to students. Today Sarvodaya became a premier institute for preparation for IIT-JEE (Mains + Advanced) / Other Engineering Entrance Exams / NEET / AIIMS / Other medical entrance exam. Needless to say, the endeavour to nurture and even further enrich the quality of education will be our constant feature. As for the rest, there will always be changes. Undoubtedly, for the better. Sarvodaya parivar is committed for providing a better education in all fields of study. 
+        div#secondBox 
+            img(src="https://source.unsplash.com/400x400/?exam,online")
+
+    section#course
+        h2
+            | OUR COURSES    
+        div#col    
+            div.course1 
+                p.text-big2
+                    | JEE - Mains
+                p.text-small2
+                    |Let's Start To Think Innovative                  
+
+            div.course2 
+                p.text-big2
+                    | NEET 
+                p.text-small2
+                    | Make All Lives Better                                 

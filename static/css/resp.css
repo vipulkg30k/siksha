@@ -1,0 +1,80 @@
+@media only screen and (max-width: 1140px){
+    .burger{
+        display: block;
+    }
+
+    .navbar{
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+    }
+
+    .nav-list{
+        flex-direction: column;
+    }
+
+    .nav-list li{
+        padding: 3px;
+    }
+
+    .visibility-class{
+        opacity: 0;
+    }
+
+    .h-nav{
+        height: 85px;
+    }
+
+    #box{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+
+    #firstBox{
+        justify-content: center;
+        text-align: center;
+    }
+
+    #course{
+        justify-content: center;
+        text-align: center;
+    }
+
+    #col{
+        padding: 5vh;
+    }
+
+    #course1{
+        width: 30vw;
+        height: 42vh;
+    }
+
+    #course2{
+        width: 30vw;
+        height: 42vh;
+    }
+
+    .text-big2{
+        position: relative;
+        font-size: 13px;
+        font-weight: bold;
+    }
+    
+    .text-small2{
+        font-size: 10px;
+        text-align: center;
+        padding: 1px;
+    }
+
+    #footer{
+        width: 100%;
+        font-size: 13px;
+    }
+
+    .container{
+        justify-content: center;
+        align-items: center;
+        min-height: 90vh;
+        width: 100%;
+    }
+
+}
