@@ -9,7 +9,7 @@ const app = express();
 var http = require('http').createServer(app)
 const fs = require('fs')
 const fastCsv = require('fast-csv')
-const PORT = 8000;
+const PORT = process.env.PORT || 8000;
 
 //DataBase Dafine
 const contactSchema = new mongoose.Schema({
