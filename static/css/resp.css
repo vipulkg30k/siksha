@@ -1,9 +1,10 @@
-@media only screen and (max-width: 1140px){
+@media only screen and (max-width: 1145px){
     .burger{
         display: block;
     }
 
     .navbar{
+        height: 300px;
         flex-direction: column;
         transition: all 0.7s ease-out;
     }
@@ -13,7 +14,11 @@
     }
 
     .nav-list li{
-        padding: 3px;
+        padding: 10px;
+    }
+
+    .nav-list a{
+        font-size: 30px;
     }
 
     .visibility-class{
