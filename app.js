@@ -3,7 +3,15 @@ const path = require('path')
 const body = require('body-parser')
 const mongoose = require('mongoose')
 
-mongoose.connect('mongodb://localhost/siksha', {useNewUrlParser: true, useUnifiedTopology: true})
+mongoose.connect(
+    'mongodb+srv://cluster0.l0nr9.mongodb.net/contact?retryWrites=true&w=majority', 
+    {
+        dbName: 'Shiksha',
+        user: 'Vipul',
+        pass: 'Vipulg0801',
+        useNewUrlParser: true, 
+        useUnifiedTopology: true
+    })
 const app = express();
 
 var http = require('http').createServer(app)
@@ -43,10 +51,10 @@ app.post('/contact', (req, res)=>{
     var data = new Contact(req.body);
     data.save().then(()=>{
         res.send("Item has been Saved to the database");
-        fs.appendFile('csv/message.txt', data, function (err) {
-            if (err) throw err;
-            console.log('Saved!');
-        });        
+       // fs.appendFile('csv/message.txt', data, function (err) {
+        //    if (err) throw err;
+          //  console.log('Saved!');
+       // });        
     }).catch(()=>{
         res.status(400).send("Item has not been saved");
     });
